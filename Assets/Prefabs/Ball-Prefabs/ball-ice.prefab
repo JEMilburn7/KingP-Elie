@@ -48,13 +48,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2889455868240343225, guid: 04ff2f9a37a461a4486e9de358218ed5, type: 3}
+      propertyPath: maxSpeed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2889455868240343225, guid: 04ff2f9a37a461a4486e9de358218ed5, type: 3}
+      propertyPath: secondsToMaxSpeed
+      value: 35
+      objectReference: {fileID: 0}
     - target: {fileID: 5293142237381627733, guid: 04ff2f9a37a461a4486e9de358218ed5, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -5546464156845659633, guid: 797aab5005ae81a49abf953d91eddc22, type: 3}
     - target: {fileID: 8642291078881015228, guid: 04ff2f9a37a461a4486e9de358218ed5, type: 3}
       propertyPath: m_Name
-      value: ball-cat Variant
+      value: ball-ice
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
