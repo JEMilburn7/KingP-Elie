@@ -18,6 +18,7 @@ public class BallBehavior : MonoBehaviour
     public float cooldown;
     public bool launching;
     public float launchDuartion;
+    public float timeLaunchStart;
     public float timeLastLaunch;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -32,17 +33,35 @@ public class BallBehavior : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+        if(launching == false && onCooldown() == false) {
+            Launch();
+        }
+        
         Vector2 currentPosition = gameObject.GetComponent<Transform>().position;
         float distance = Vector2.Distance(currentPosition, targetPosition);
         if(distance > 0.1f) {
             float difficulty = getDifficultyPercentage();
-            float currentSpeed = Mathf.Lerp(minSpeed, maxSpeed, difficulty);
+            float currentSpeed;
+            if(launching == true) {
+                float launchingForHowLong = Time.time - timeLaunchStart;
+                if(launchingForHowLong > launchDuartion) {
+                    startCooldown();
+                }
+                currentSpeed = Mathf.Lerp(minLaunchSpeed, maxLaunchSpeed, difficulty);
+            } else {
+                currentSpeed = Mathf.Lerp(minSpeed, maxSpeed, difficulty);
+            }
             currentSpeed = currentSpeed * Time.deltaTime;
             Vector2 newPosition = Vector2.MoveTowards(currentPosition, targetPosition, currentSpeed);
             transform.position = newPosition;
         } else {
+            if(launching == true) {
+                startCooldown();
+            }
             targetPosition = getRandomPosition();
         }
+
 
     }
 
@@ -58,6 +77,28 @@ public class BallBehavior : MonoBehaviour
     }
 
     public void Launch () {
-    
+        targetPosition = target.transform.position;
+
+        if(launching == false) {
+            timeLaunchStart = Time.time;
+            launching = true;
+        }
+    }
+
+    public bool onCooldown() {
+        bool result = false;
+
+        float timeSinceLastLaunch = Time.time - timeLastLaunch;
+        if(timeSinceLastLaunch < cooldown) {
+            result = true;
+        }
+
+        return result;
+    }
+
+    public void startCooldown() {
+        timeLastLaunch = Time.time;
+        launching = false;
+
     }
 }
