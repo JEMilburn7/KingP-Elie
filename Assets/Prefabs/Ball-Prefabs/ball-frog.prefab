@@ -64,6 +64,18 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -178098396436122259, guid: 2778dacc15c249b4d849cd2b06b85feb, type: 3}
+    - target: {fileID: 8249697549706921453, guid: 04ff2f9a37a461a4486e9de358218ed5, type: 3}
+      propertyPath: m_Radius
+      value: 3.4681246
+      objectReference: {fileID: 0}
+    - target: {fileID: 8249697549706921453, guid: 04ff2f9a37a461a4486e9de358218ed5, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.24710655
+      objectReference: {fileID: 0}
+    - target: {fileID: 8249697549706921453, guid: 04ff2f9a37a461a4486e9de358218ed5, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.32432953
+      objectReference: {fileID: 0}
     - target: {fileID: 8642291078881015228, guid: 04ff2f9a37a461a4486e9de358218ed5, type: 3}
       propertyPath: m_Name
       value: ball-frog

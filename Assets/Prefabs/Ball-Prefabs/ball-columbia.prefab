@@ -64,9 +64,21 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 8050257667232559749, guid: d759edb540a47da409421d0c97460dd0, type: 3}
+    - target: {fileID: 8249697549706921453, guid: 04ff2f9a37a461a4486e9de358218ed5, type: 3}
+      propertyPath: m_Radius
+      value: 3.7306783
+      objectReference: {fileID: 0}
+    - target: {fileID: 8249697549706921453, guid: 04ff2f9a37a461a4486e9de358218ed5, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.030889511
+      objectReference: {fileID: 0}
     - target: {fileID: 8642291078881015228, guid: 04ff2f9a37a461a4486e9de358218ed5, type: 3}
       propertyPath: m_Name
       value: ball-columbia
+      objectReference: {fileID: 0}
+    - target: {fileID: 8642291078881015228, guid: 04ff2f9a37a461a4486e9de358218ed5, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

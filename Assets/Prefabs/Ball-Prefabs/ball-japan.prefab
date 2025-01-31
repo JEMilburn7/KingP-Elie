@@ -60,6 +60,14 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -8487396936026994761, guid: c98d58f978f18e44e984c75cdf76f221, type: 3}
+    - target: {fileID: 8249697549706921453, guid: 04ff2f9a37a461a4486e9de358218ed5, type: 3}
+      propertyPath: m_Radius
+      value: 3.9005644
+      objectReference: {fileID: 0}
+    - target: {fileID: 8249697549706921453, guid: 04ff2f9a37a461a4486e9de358218ed5, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.23166497
+      objectReference: {fileID: 0}
     - target: {fileID: 8642291078881015228, guid: 04ff2f9a37a461a4486e9de358218ed5, type: 3}
       propertyPath: m_Name
       value: ball-japan

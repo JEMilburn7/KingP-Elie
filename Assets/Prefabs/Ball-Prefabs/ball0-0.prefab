@@ -64,6 +64,14 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -7627733529822777162, guid: 5b53d6804a47d474faaab008972b66f1, type: 3}
+    - target: {fileID: 8249697549706921453, guid: 04ff2f9a37a461a4486e9de358218ed5, type: 3}
+      propertyPath: m_Radius
+      value: 3.267349
+      objectReference: {fileID: 0}
+    - target: {fileID: 8249697549706921453, guid: 04ff2f9a37a461a4486e9de358218ed5, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.030889312
+      objectReference: {fileID: 0}
     - target: {fileID: 8642291078881015228, guid: 04ff2f9a37a461a4486e9de358218ed5, type: 3}
       propertyPath: m_Name
       value: ball0-0
