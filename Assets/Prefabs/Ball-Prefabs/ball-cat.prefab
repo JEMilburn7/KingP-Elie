@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8249697549706921453}
   m_Layer: 0
   m_Name: ball-cat
-  m_TagString: Untagged
+  m_TagString: Ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -119,6 +119,7 @@ MonoBehaviour:
   launchDuartion: 0
   timeLaunchStart: 0
   timeLastLaunch: 0
+  rerouting: 0
 --- !u!50 &9148555870916340671
 Rigidbody2D:
   serializedVersion: 5

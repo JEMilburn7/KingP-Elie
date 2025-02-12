@@ -11,7 +11,7 @@ public class DashIconBehavior : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        label = GetComponent<TextMeshProUGUI>();
+        label = GetComponentInChildren<TextMeshProUGUI>();
         Image[] images = GetComponentsInChildren<Image>();
         for(int i = 0; i < images.Length; i++) {
             if(images[i].tag == "overlay") {

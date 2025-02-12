@@ -204,6 +204,10 @@ PrefabInstance:
       value: ball-frog
       objectReference: {fileID: 0}
     - target: {fileID: 9102140714238893132, guid: 0db99a1f8b87f234aa04d3edf41f117c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9102140714238893132, guid: 0db99a1f8b87f234aa04d3edf41f117c, type: 3}
       propertyPath: m_TagString
       value: Ball
       objectReference: {fileID: 0}
@@ -782,6 +786,7 @@ GameObject:
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
   - component: {fileID: 519420030}
+  - component: {fileID: 519420033}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -907,6 +912,38 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &519420033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c03c036ace27b474999e041b7d41e06a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ballVariants:
+  - {fileID: 8642291078881015228, guid: 04ff2f9a37a461a4486e9de358218ed5, type: 3}
+  - {fileID: 9102140714238893132, guid: 0db99a1f8b87f234aa04d3edf41f117c, type: 3}
+  - {fileID: 3388555897133920890, guid: 8b546b24e152e6643b80b7714e4d24b7, type: 3}
+  - {fileID: 124898527645939215, guid: aa467cda694592a44988c9ef56b27f36, type: 3}
+  - {fileID: 6243399518443233269, guid: af73ea268b4938a498c25b12a5a0f7f5, type: 3}
+  - {fileID: 1286749315518147472, guid: de68a6d9d6939cf4db0ce53d3c09a58d, type: 3}
+  - {fileID: 4544054584327992156, guid: 0a732916bc86ca7448c67aec65070d2d, type: 3}
+  - {fileID: 6000749439721619146, guid: 7238403f5a8e4534bac17292edbfe5b5, type: 3}
+  - {fileID: 3220243220547118341, guid: e7cf5c02d249f4345b66e8406a73fac0, type: 3}
+  - {fileID: 3583755299395401765, guid: 6568d20ebe0e1a34eb5766b4dd9cc99d, type: 3}
+  targetObject: {fileID: 1519082123}
+  startTime: 0
+  spawnRatio: 1
+  minX: -10.66
+  maxX: 10.61
+  minY: -4.08
+  maxY: 4.06
+  minSpawn: 3
+  maxSpawn: 15
 --- !u!1001 &555020153
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -989,7 +1026,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6243399518443233269, guid: af73ea268b4938a498c25b12a5a0f7f5, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6243399518443233269, guid: af73ea268b4938a498c25b12a5a0f7f5, type: 3}
       propertyPath: m_TagString
@@ -2750,7 +2787,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1286749315518147472, guid: de68a6d9d6939cf4db0ce53d3c09a58d, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1286749315518147472, guid: de68a6d9d6939cf4db0ce53d3c09a58d, type: 3}
       propertyPath: m_TagString
@@ -3535,7 +3572,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 124898527645939215, guid: aa467cda694592a44988c9ef56b27f36, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 124898527645939215, guid: aa467cda694592a44988c9ef56b27f36, type: 3}
       propertyPath: m_TagString
@@ -3708,7 +3745,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8642291078881015228, guid: 04ff2f9a37a461a4486e9de358218ed5, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8642291078881015228, guid: 04ff2f9a37a461a4486e9de358218ed5, type: 3}
       propertyPath: m_TagString

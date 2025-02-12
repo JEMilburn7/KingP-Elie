@@ -30,6 +30,7 @@ public class BallBehavior : MonoBehaviour
         //maxSpeed = 10.0f;
         //minSpeed = .01f;
         targetPosition = getRandomPosition();
+        initialPosition();
     }
 
     // Update is called once per frame
@@ -142,5 +143,16 @@ public class BallBehavior : MonoBehaviour
         } else {
             rerouting = true;
         }
+    }
+
+    public void setBounds(float miX, float maX, float miY, float maY) {
+        minX = miX;
+        maxX = maX;
+        minY = miY;
+        maxY = maY;
+    }
+
+    public void setTarget(GameObject pin) {
+        target = pin;
     }
 }
