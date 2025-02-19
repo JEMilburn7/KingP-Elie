@@ -900,8 +900,37 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -4182931856164643842, guid: 395de803c7e5b9c4d85f9e6d0dd90301, type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8622125752956916935, guid: 3ca2f9b7fbe5de8479c28edb91f2d22e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2761492846115499428, guid: 3ca2f9b7fbe5de8479c28edb91f2d22e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -3859900752158092043}
   m_SourcePrefab: {fileID: 100100000, guid: 3ca2f9b7fbe5de8479c28edb91f2d22e, type: 3}
+--- !u!1 &920792408298440013 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2761492846115499428, guid: 3ca2f9b7fbe5de8479c28edb91f2d22e, type: 3}
+  m_PrefabInstance: {fileID: 3068504740733020393}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &-3859900752158092043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 920792408298440013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e849a7d337809c4db393a35fa31c233, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseSpeed: 8
+  newPosition: {x: 0, y: 0}
+  mousePosG: {x: 0, y: 0, z: 0}
+  dashSpeed: 15
+  speed: 8
+  dashDuration: 2
+  timeDashStart: 0
+  timeDashEnd: 0

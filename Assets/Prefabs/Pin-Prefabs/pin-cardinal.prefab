@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7174093715146445793}
   - component: {fileID: -3451012695741494224}
   - component: {fileID: -7257569248178568473}
+  - component: {fileID: 8622125752956916935}
   m_Layer: 0
   m_Name: pin-cardinal
   m_TagString: Untagged
@@ -280,3 +281,23 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &8622125752956916935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2761492846115499428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e849a7d337809c4db393a35fa31c233, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseSpeed: 8
+  newPosition: {x: 0, y: 0}
+  mousePosG: {x: 0, y: 0, z: 0}
+  dashSpeed: 15
+  speed: 8
+  dashDuration: 2
+  timeDashStart: 0
+  timeDashEnd: 0

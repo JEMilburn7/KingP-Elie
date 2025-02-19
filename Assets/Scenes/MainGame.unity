@@ -944,6 +944,7 @@ MonoBehaviour:
   maxY: 4.06
   minSpawn: 3
   maxSpawn: 15
+  pinsDB: {fileID: 11400000, guid: 0065d2434a15a6d408ed235c6aa4c2ed, type: 2}
 --- !u!1001 &555020153
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3838,6 +3839,10 @@ PrefabInstance:
     - target: {fileID: 2761492846115499428, guid: 3ca2f9b7fbe5de8479c28edb91f2d22e, type: 3}
       propertyPath: m_Name
       value: pin-cardinal_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2761492846115499428, guid: 3ca2f9b7fbe5de8479c28edb91f2d22e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2761492846115499428, guid: 3ca2f9b7fbe5de8479c28edb91f2d22e, type: 3}
       propertyPath: m_TagString
